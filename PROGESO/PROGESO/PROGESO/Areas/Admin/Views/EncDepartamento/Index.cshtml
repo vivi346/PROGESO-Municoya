@@ -1,0 +1,116 @@
+﻿@model IEnumerable<PROGESO.Models.EncDepartamento>
+
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<br />
+</div>
+<!-- Start header -->
+<div class="all-page-title page-breadcrumb">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>
+                    Encargados
+                </h1>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End header -->
+
+<div class="border backgroundWhite">
+    <div class="row">
+        <div class="col-6">
+
+        </div>
+        <div class="col-6 text-right">
+            @Html.Partial("_CreateButtonPartial")
+        </div>
+    </div>
+    <br />
+    <div>
+        @if (Model.Count() > 0)
+        {
+            <table class="table table-striped border">
+                <tr class="table-secondary">
+                    <th>
+                        <label for="IDEncargado">Encargado</label>
+                    </th>
+
+                    <th>
+                        <label for="Correo">Correo</label>
+                    </th>
+                    <th>
+                        <label for="Nombre">Nombre</label>
+                    </th>
+
+                    <th>
+                        <label for="Apellido1">Apellido1</label>
+                    </th>
+                    <th>
+                        <label for="Apellido2">Apellido2</label>
+                    </th>
+                    <th>
+                        <label for="Departament.Name">Departamento</label>
+                    </th>
+                    <th></th>
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(m => item.Id)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(m => item.Correo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(m => item.Nombre)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(m => item.Apellido1)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(m => item.Apellido2)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(m => item.Departament.Name)
+                        </td>
+                        <td>
+                            <a class="btn btn-dark" href="~/Admin/EncDepartamento/Edit/@item.Id">Editar</a>
+                            <a class="btn btn-danger" href="~/Admin/EncDepartamento/Delete/@item.Id">Borrar</a>
+                            <a class="btn btn-success" href="~/Admin/EncDepartamento/Details/@item.Id">Detalles</a>
+
+                        </td>
+
+
+
+                    </tr>
+
+                }
+            </table>
+        }
+        else
+        {
+            <p style="color:black">No hay encargados</p>
+        }
+
+    </div>
+
+
+</div>
+
+<div class="col-6">
+    @Html.Partial("_BackButton")
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

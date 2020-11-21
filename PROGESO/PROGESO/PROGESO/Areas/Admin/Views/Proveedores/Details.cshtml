@@ -1,0 +1,57 @@
+﻿@model PROGESO.Models.Proveedores
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.Tittle</h2>
+<br />
+</div>
+<!-- Start header -->
+<div class="all-page-title page-breadcrumb">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>
+                    Detalles de Proveedores
+                </h1>
+            </div>
+        </div>
+    </div>
+</div>
+<h2 class="text-info"></h2>
+<br />
+
+@using (Html.BeginForm("Details", "Proveedores", FormMethod.Post))
+{
+<div class="form-group-row">
+    <div class="col-md-6">
+        @Html.HiddenFor(d => d.ced_juridica)
+        <div>
+            <label for="ced_juridica">Ced_Juridica</label>
+            @Html.TextBoxFor(d => d.ced_juridica, "", new { @class = "form-control" })
+            @Html.ValidationMessageFor(d => d.ced_juridica, null, new { @class = "red" })
+        </div>
+        <div>
+            <label for="nombre">Nombre</label>
+            @Html.TextBoxFor(d => d.nombre, "", new { @class = "form-control" })
+            @Html.ValidationMessageFor(d => d.nombre, null, new { @class = "red" })
+        </div>
+
+        <br />
+
+        <!--<div class="col-6">-->
+        @*<a href="javascript:history.back()"> Volver Atrás</a>*@
+        <!--<input type="button" onClick="history.back()" value="Volver Atrás">
+        </div>-->
+
+
+    </div>
+
+
+</div>
+    <div class="col-6">
+
+        @Html.Partial("_BackButton")
+    </div>
+}

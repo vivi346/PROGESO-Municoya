@@ -1,0 +1,81 @@
+﻿@model IEnumerable<PROGESO.Models.Departament>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<br />
+
+<div class="all-page-title page-breadcrumb">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>
+                    Departamentos
+                </h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="border backgroundWhite">
+    <div class="row">
+        <div class="col-md-6">
+            @*<h2 class="text-info">Lista de departamentos</h2>*@
+        </div>
+        <div class="col-lg-6 text-right">
+            <partial name="_CreateButtonPartial" />
+            @Html.Partial("_CreateButtonPartial")
+        </div>
+    </div>
+    <br />
+    <div>
+        @if (Model.Count() > 0)
+        {
+            <table class="table tale-striped border">
+                <tr class="table.secondary">
+                    <th>
+
+                        @Html.DisplayNameFor(m => m.Id)
+                    </th>
+                    <th>
+                        @*//header*@
+                        @Html.DisplayNameFor(m => m.Name)
+                    </th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(m => item.Id)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(m => item.Name)
+                        </td>
+                        <td>
+                            <a class="btn btn-dark" href="~/Admin/Departament/Edit/@item.Id">Editar</a>
+                            <a class="btn btn-danger" href="~/Admin/Departament/Delete/@item.Id">Borrar</a>
+                            <a class="btn btn-success" href="~/Admin/Departament/Details/@item.Id">Detalles</a>
+                        </td>
+
+                    </tr>
+
+                }
+            </table>
+        }
+        else
+        {
+            <h3 style="color:maroon">Aún no se han ingresado departamentos...</h3>
+        }
+    </div>
+</div>
+
+<div class="col-6">
+    @Html.Partial("_BackButton")
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

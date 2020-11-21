@@ -1,0 +1,110 @@
+﻿@using PROGESO.Utility
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, in itial-scale=1">
+
+    <!-- Site Metas -->
+    <title>PROGESO</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="~/images/logo.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="~/images/logo.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="~/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="~/css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="~/css/custom.css">
+</head>
+<body class="search-background">
+    <!-- Comienza Header -->
+    <header class="top-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/images/logo.png" style="width:30%; height:30%;" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <partial name="_LoginPartial" />
+                    <ul class="navbar-nav mr-auto">
+                        @if (User.IsInRole(PROGESO.Utility.SD.Manager))
+                        {
+                            <li class="nav-item dropdown">
+                                <a href="" class="nav-link dropdown-toggle" id="menu" data-toggle="dropdown">
+                                    Mantenimiento
+                                </a>
+                                <ul class="dropdown-menu" aria-labelleby="menu">
+                                    <li class="dropdown-item"><a asp-area="Admin" asp-controller="Proveedores" asp-action="Index">Proveedores</a></li>
+                                    <li class="dropdown-item"><a asp-area="Admin" asp-controller="Departament" asp-action="Index">Departamentos</a></li>
+                                    <li class="dropdown-item"><a asp-area="Admin" asp-controller="Producto" asp-action="Index">Productos</a></li>
+                                    <li class="dropdown-item"><a asp-area="Admin" asp-controller="EncDepartamento" asp-action="Index">Encargados</a></li>
+                                    <li class="dropdown-item"><a asp-area="Admin" asp-controller="ProductoProveedor" asp-action="Index">Ingresar Compra</a></li>
+                                    @*<li class="dropdown-item"><a asp-area="Admin" asp-controller="User" asp-action="Index">Gestionar Usuarios</a></li>*@
+
+                                </ul>
+                            </li>
+                        }
+                        @if (User.IsInRole(PROGESO.Utility.SD.FrontDeskUser))
+                        {
+                            <li class="dropdown-item"><a asp-area="Admin" asp-controller="Solicitud" asp-action="Index">Gestionar Solicitud</a></li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+    <!--</div> -->
+    <!-- Otras librerias -->
+    <!-- <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/jquery-ui.js"></script> -->
+    <!-- las librerias de Bootstrap 4 solo cargaran en todo momento aun sin internet-->
+    <script src="~/js/jquery-3.2.1.min.js"></script>
+    <script src="~/js/popper.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <!-- CDN de las librerias de Bootstrap 4 solo cargaran uando tenga conecion a Internet -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="company-name">
+                        All Rights Reserved. &copy; 2020 <a href="">PROGESO, MUNICIPALIDAD DE NICOYA</a>
+                        <a href="https://html.design/"></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @RenderSection("Scripts", required: false);
+</body>
+</html>
+
+

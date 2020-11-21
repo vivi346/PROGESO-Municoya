@@ -1,0 +1,69 @@
+﻿@model PROGESO.Models.Producto
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.Tittle</h2>
+<br />
+</div>
+<!-- Start header -->
+<div class="all-page-title page-breadcrumb">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>
+                    Detalles de Producto
+                </h1>
+            </div>
+        </div>
+    </div>
+</div>
+<h2 class="text-info"></h2>
+<br />
+
+@using (Html.BeginForm("Details", "Producto", FormMethod.Post))
+{
+    <div class="form-group-row">
+        <div class="col-md-6">
+            @Html.HiddenFor(d => d.cod_prod)
+
+            <div>
+                <label for="cod_prod">Codigo</label>
+                @Html.TextBoxFor(d => d.cod_prod, "", new { @class = "form-control" })
+                @Html.ValidationMessageFor(d => d.cod_prod, null, new { @class = "red" })
+            </div>
+            <div>
+                <label for="descripcion">Descripcion</label>
+                @Html.TextBoxFor(d => d.descripcion, "", new { @class = "form-control" })
+                @Html.ValidationMessageFor(d => d.descripcion, null, new { @class = "red" })
+            </div>
+
+            @*<div>
+                    <label for="precio">Precio</label>
+                    @Html.TextBoxFor(d => d.precio, "", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(d => d.precio, null, new { @class = "red" })
+                </div>
+
+                <div>
+                    <label for="cantidad">Cantidad</label>
+                    @Html.TextBoxFor(d => d.cantidad, "", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(d => d.cantidad, null, new { @class = "red" })
+                </div>
+
+                <div>
+                    <label for="ced_juridica">Proveedor</label>
+                    @Html.TextBoxFor(d => d.Proveedores.nombre, "", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(d => d.Proveedores.nombre, null, new { @class = "red" })
+                </div>*@
+
+            <br />
+        </div>
+
+
+    </div>
+    <div class="col-6">
+
+        @Html.Partial("_BackButton")
+    </div>
+}

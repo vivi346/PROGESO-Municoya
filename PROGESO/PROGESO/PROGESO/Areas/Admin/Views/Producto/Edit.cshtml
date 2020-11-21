@@ -1,0 +1,46 @@
+﻿@model PROGESO.Models.Producto
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>@ViewBag.Tittle</h2>
+<br />
+</div>
+<!-- Start header -->
+<div class="all-page-title page-breadcrumb">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>
+                    Editar Producto
+                </h1>
+            </div>
+        </div>
+    </div>
+</div>
+<h2 class="text-info"></h2>
+<br />
+
+@using (Html.BeginForm("Edit", "Producto", FormMethod.Post))
+{
+    <div class="form-group-row">
+        <div class="col-md-6">
+            @Html.HiddenFor(d => d.cod_prod)
+
+            <div>
+                <label for="descripcion">Descripcion</label>
+                @Html.TextBoxFor(d => d.descripcion, "", new { @class = "form-control" })
+                @Html.ValidationMessageFor(d => d.descripcion, null, new { @class = "red" })
+            </div>
+           
+
+            <br />
+
+        </div>
+    </div>
+    <div class="col-6">
+        @Html.Partial("_EditAndBackToListButton")
+    </div>
+}

@@ -1,0 +1,77 @@
+﻿@model PROGESO.Models.ProductoProveedor
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>@ViewBag.Tittle</h2>
+<br />
+</div>
+<!-- Start header -->
+<div class="all-page-title page-breadcrumb">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>
+                    Ingresar Producto
+                </h1>
+            </div>
+        </div>
+    </div>
+</div>
+<h2 class="text-info"></h2>
+<br />
+
+
+@using (Html.BeginForm("Create", "ProductoProveedor", FormMethod.Post))
+{
+    <div class="form-group-row">
+
+        <div class="col-md-6">
+
+            <div>
+                <label for="cod_prod">Producto</label>
+                <div class="col-md-12 col-sm-12">
+                    @Html.DropDownList("cod_prod", null, htmlAttributes: new { @class = "select2_single form-control col-md-7 col-xs-12" })
+                    @Html.ValidationMessageFor(model => model.cod_prod, "", new { @class = "Text-danger" })
+                </div>
+            </div>
+
+            <div>
+                <label for="ced_juridica">Proveedor</label>
+                <div class="col-md-12 col-sm-12">
+                    @Html.DropDownList("ced_juridica", null, htmlAttributes: new { @class = "select2_single form-control col-md-7 col-xs-12" })
+                    @Html.ValidationMessageFor(model => model.ced_juridica, "", new { @class = "Text-danger" })
+                </div>
+            </div>
+
+            <div>
+                <label for="precio">Precio</label>
+                @Html.TextBoxFor(d => d.precio, "", new { @class = "form-control" })
+                @Html.ValidationMessageFor(d => d.precio, null, new { @class = "red" })
+            </div>
+
+            <div>
+                <label for="cantidad">Cantidad</label>
+                @Html.TextBoxFor(d => d.cantidad, "", new { @class = "form-control" })
+                @Html.ValidationMessageFor(d => d.cantidad, null, new { @class = "red" })
+            </div>
+
+          
+            <div>
+                    @Html.LabelFor(model => model.FechaCompra, htmlAttributes: new { @class = "control-label col-md-4" })
+                    @Html.EditorFor(model => model.FechaCompra, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.FechaCompra, "", new { @class = "text-danger" })
+            </div>
+
+            <br />
+
+
+        </div>
+    </div>
+
+    <div class="col-6">
+
+        @Html.Partial("_CreateAndBackToListButton")
+    </div>
+}
