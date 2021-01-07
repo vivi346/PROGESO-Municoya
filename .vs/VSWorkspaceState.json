@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\PROGESO",
+    "\\PROGESO\\PROGESO",
+    "\\PROGESO\\PROGESO\\PROGESO",
+    "\\PROGESO\\PROGESO\\PROGESO\\Areas",
+    "\\PROGESO\\PROGESO\\PROGESO\\Areas\\Admin",
+    "\\PROGESO\\PROGESO\\PROGESO\\Areas\\Customer",
+    "\\PROGESO\\PROGESO\\PROGESO\\Areas\\Customer\\Views",
+    "\\PROGESO\\PROGESO\\PROGESO\\Areas\\Customer\\Views\\Home",
+    "\\PROGESO\\PROGESO\\PROGESO\\Views"
+  ],
+  "SelectedNode": "\\PROGESO\\PROGESO\\PROGESO\\Areas\\Customer\\Views\\Home\\Index.cshtml",
+  "PreviewInSolutionExplorer": false
+}

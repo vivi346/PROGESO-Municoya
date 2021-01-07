@@ -1,23 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vivi3\\OneDrive\\Escritorio\\PROY-PROGESO\\PROGESO\\PROGESO\\PROGESO\\PROGESO.csproj": {}
+    "D:\\1Datos Windows\\Desktop\\PROGESO-Municoya\\PROGESO\\PROGESO\\PROGESO\\PROGESO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vivi3\\OneDrive\\Escritorio\\PROY-PROGESO\\PROGESO\\PROGESO\\PROGESO\\PROGESO.csproj": {
+    "D:\\1Datos Windows\\Desktop\\PROGESO-Municoya\\PROGESO\\PROGESO\\PROGESO\\PROGESO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vivi3\\OneDrive\\Escritorio\\PROY-PROGESO\\PROGESO\\PROGESO\\PROGESO\\PROGESO.csproj",
+        "projectUniqueName": "D:\\1Datos Windows\\Desktop\\PROGESO-Municoya\\PROGESO\\PROGESO\\PROGESO\\PROGESO.csproj",
         "projectName": "PROGESO",
-        "projectPath": "C:\\Users\\vivi3\\OneDrive\\Escritorio\\PROY-PROGESO\\PROGESO\\PROGESO\\PROGESO\\PROGESO.csproj",
-        "packagesPath": "C:\\Users\\vivi3\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vivi3\\OneDrive\\Escritorio\\PROY-PROGESO\\PROGESO\\PROGESO\\PROGESO\\obj\\",
+        "projectPath": "D:\\1Datos Windows\\Desktop\\PROGESO-Municoya\\PROGESO\\PROGESO\\PROGESO\\PROGESO.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "D:\\1Datos Windows\\Desktop\\PROGESO-Municoya\\PROGESO\\PROGESO\\PROGESO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\vivi3\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -30,6 +32,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -41,6 +44,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
@@ -85,6 +89,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -93,7 +103,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.400-preview-015178\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200-preview.20601.7\\RuntimeIdentifierGraph.json"
         }
       }
     }
