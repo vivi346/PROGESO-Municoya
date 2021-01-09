@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\PROGESO MUNI\\vivi346\\PROGESO-Municoya\\PROGESO\\PROGESO\\PROGESO\\PROGESO.csproj": {}
+    "C:\\Users\\jspab\\Desktop\\PROGESO MUNI\\PROGESO\\PROGESO-Municoya\\PROGESO\\PROGESO\\PROGESO\\PROGESO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\PROGESO MUNI\\vivi346\\PROGESO-Municoya\\PROGESO\\PROGESO\\PROGESO\\PROGESO.csproj": {
+    "C:\\Users\\jspab\\Desktop\\PROGESO MUNI\\PROGESO\\PROGESO-Municoya\\PROGESO\\PROGESO\\PROGESO\\PROGESO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\PROGESO MUNI\\vivi346\\PROGESO-Municoya\\PROGESO\\PROGESO\\PROGESO\\PROGESO.csproj",
+        "projectUniqueName": "C:\\Users\\jspab\\Desktop\\PROGESO MUNI\\PROGESO\\PROGESO-Municoya\\PROGESO\\PROGESO\\PROGESO\\PROGESO.csproj",
         "projectName": "PROGESO",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\PROGESO MUNI\\vivi346\\PROGESO-Municoya\\PROGESO\\PROGESO\\PROGESO\\PROGESO.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\PROGESO MUNI\\vivi346\\PROGESO-Municoya\\PROGESO\\PROGESO\\PROGESO\\obj\\",
+        "projectPath": "C:\\Users\\jspab\\Desktop\\PROGESO MUNI\\PROGESO\\PROGESO-Municoya\\PROGESO\\PROGESO\\PROGESO\\PROGESO.csproj",
+        "packagesPath": "C:\\Users\\jspab\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jspab\\Desktop\\PROGESO MUNI\\PROGESO\\PROGESO-Municoya\\PROGESO\\PROGESO\\PROGESO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jspab\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -93,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
