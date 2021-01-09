@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap4")]
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-PROGESO-A80F9F35-E00C-4647-9B9C-F59B97D1391D")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("PROGESO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
