@@ -38,8 +38,9 @@ namespace PROGESO.Areas.Admin.Controllers
             {
                 if (ModelState.IsValid)
                 {
+                  
 
-                    var Provee = new Proveedores();
+                        var Provee = new Proveedores();
                     Provee.ced_juridica = proveedores.ced_juridica;
                     Provee.nombre = proveedores.nombre;
 

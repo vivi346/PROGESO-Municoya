@@ -30,12 +30,12 @@
 
             <div>
                 <label for="cod_prod">Codigo</label>
-                @Html.TextBoxFor(d => d.cod_prod, "", new { @class = "form-control" })
+                @Html.TextBoxFor(d => d.cod_prod, "", new { @class = "form-control", @readonly = "true" })
                 @Html.ValidationMessageFor(d => d.cod_prod, null, new { @class = "red" })
             </div>
             <div>
                 <label for="descripcion">Descripcion</label>
-                @Html.TextBoxFor(d => d.descripcion, "", new { @class = "form-control" })
+                @Html.TextBoxFor(d => d.descripcion, "", new { @class = "form-control", @readonly = "true" })
                 @Html.ValidationMessageFor(d => d.descripcion, null, new { @class = "red" })
             </div>
 

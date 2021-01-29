@@ -31,13 +31,13 @@
             @Html.HiddenFor(d => d.cod_prod)
 
             <div>
-                <label for="cod_prod">Cod Producto</label>
+                <label for="cod_prod">cod_prod</label>
                 @Html.TextBoxFor(d => d.Producto.descripcion, "", new { @class = "form-control" })
                 @Html.ValidationMessageFor(d => d.Producto.descripcion, null, new { @class = "red" })
             </div>
 
             <div>
-                <label for="ced_juridica">Ced_Juridica</label>
+                <label for="ced_juridica">ced_juridica</label>
                 @Html.TextBoxFor(d => d.Proveedores.nombre, "", new { @class = "form-control" })
                 @Html.ValidationMessageFor(d => d.Proveedores.nombre, null, new { @class = "red" })
             </div>

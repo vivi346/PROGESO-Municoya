@@ -80,7 +80,8 @@
                         </td>
                         <td>
                         <td>
-                            @Html.DisplayFor(model => item.FechaCompra, "{0:dd/MM/yyyy}")
+                            @Html.DisplayFor(model => item.FechaCompra, "{0:dd/MM/yyyy HH:mm}").
+
                         </td>
                         <td>
                             <a class="btn btn-dark" href="~/Admin/ProductoProveedor/Edit/@item.id">Editar</a>

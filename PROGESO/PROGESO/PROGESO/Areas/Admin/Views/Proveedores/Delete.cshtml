@@ -6,7 +6,7 @@
 
 <h2>@ViewBag.Tittle</h2>
 <br />
-</div>
+
 <!-- Start header -->
 <div class="all-page-title page-breadcrumb">
     <div class="container text-center">
@@ -28,13 +28,14 @@
     <div class="col-md-6">
         @Html.HiddenFor(d => d.ced_juridica)
         <div>
+
             <label for="ced_juridica">Ced_Juridica</label>
-            @Html.TextBoxFor(d => d.ced_juridica, "", new { @class = "form-control" })
-            @Html.ValidationMessageFor(d => d.ced_juridica, null, new { @class = "red" })
+            @Html.TextBoxFor(d => d.ced_juridica, "", new { @class = "form-control", @readonly = "true" })
+            @Html.ValidationMessageFor(d => d.ced_juridica, "", new { @class = "red" })
         </div>
         <div>
             <label for="nombre">Nombre</label>
-            @Html.TextBoxFor(d => d.nombre, "", new { @class = "form-control" })
+            @Html.TextBoxFor(d => d.nombre, "", new { @class = "form-control", @readonly = "true" })
             @Html.ValidationMessageFor(d => d.nombre, null, new { @class = "red" })
         </div>
 

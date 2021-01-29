@@ -27,12 +27,7 @@
 {
 <div class="form-group-row">
     <div class="col-md-6">
-        @Html.HiddenFor(d => d.ced_juridica)
-        <div>
-            <label for="ced_juridica">Ced_Juridica</label>
-            @Html.TextBoxFor(d => d.ced_juridica, "", new { @class = "form-control" })
-            @Html.ValidationMessageFor(d => d.ced_juridica, null, new { @class = "red" })
-        </div>
+      
         <div>
             <label for="nombre">Nombre</label>
             @Html.TextBoxFor(d => d.nombre, "", new { @class = "form-control" })

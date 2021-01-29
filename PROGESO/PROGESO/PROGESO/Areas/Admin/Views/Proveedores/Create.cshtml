@@ -32,8 +32,9 @@
             <div>
 
                 <label for="ced_juridica">Ced_Juridica</label>
-                @Html.TextBoxFor(d => d.ced_juridica, "", new { @class = "form-control" })
+                @Html.TextBoxFor(d => d.ced_juridica, "", new { @class = "form-control", type = "number" })
                 @Html.ValidationMessageFor(d => d.ced_juridica, null, new { @class = "red" })
+
             </div>
             <div>
 
