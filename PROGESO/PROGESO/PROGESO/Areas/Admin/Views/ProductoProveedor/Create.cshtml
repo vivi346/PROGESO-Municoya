@@ -47,13 +47,13 @@
 
             <div>
                 <label for="precio">Precio</label>
-                @Html.TextBoxFor(d => d.precio, "", new { @class = "form-control" })
+                @Html.TextBoxFor(d => d.precio, "", new { @class = "form-control", type= "number" })
                 @Html.ValidationMessageFor(d => d.precio, null, new { @class = "red" })
             </div>
 
             <div>
                 <label for="cantidad">Cantidad</label>
-                @Html.TextBoxFor(d => d.cantidad, "", new { @class = "form-control" })
+                @Html.TextBoxFor(d => d.cantidad, "", new { @class = "form-control", type = "number" })
                 @Html.ValidationMessageFor(d => d.cantidad, null, new { @class = "red" })
             </div>
 

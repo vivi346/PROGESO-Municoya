@@ -16,7 +16,7 @@ namespace PROGESO.Models
         [Required]
 
         [Display(Name = "Correo")]
-
+        [EmailAddress(ErrorMessage = "Dirección de correo invalida")]
         public string Correo { get; set; }
 
         [Required]

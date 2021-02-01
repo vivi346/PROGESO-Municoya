@@ -29,11 +29,11 @@
         @Html.HiddenFor(d => d.Id)
         <div>
             <label for="Id">Id</label>
-            @Html.TextBoxFor(d => d.Id, "", new { @class = "form-control" })
+            @Html.TextBoxFor(d => d.Id, "", new { @class = "form-control" , @readonly = "true" })
         </div>
         <div>
             <label for="Name">Nombre</label>
-            @Html.TextBoxFor(d => d.Name, "", new { @class = "form-control" })
+            @Html.TextBoxFor(d => d.Name, "", new { @class = "form-control" , @readonly = "true" })
         </div>
 
         <br />

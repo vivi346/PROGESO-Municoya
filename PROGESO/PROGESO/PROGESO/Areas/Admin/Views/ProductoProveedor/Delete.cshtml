@@ -31,31 +31,31 @@
             @Html.HiddenFor(d => d.cod_prod)
 
             <div>
-                <label for="cod_prod">cod_prod</label>
-                @Html.TextBoxFor(d => d.Producto.descripcion, "", new { @class = "form-control" })
+                <label for="cod_prod">Producto</label>
+                @Html.TextBoxFor(d => d.Producto.descripcion, "", new { @class = "form-control" , @readonly = "true" })
                 @Html.ValidationMessageFor(d => d.Producto.descripcion, null, new { @class = "red" })
             </div>
 
             <div>
-                <label for="ced_juridica">ced_juridica</label>
-                @Html.TextBoxFor(d => d.Proveedores.nombre, "", new { @class = "form-control" })
+                <label for="ced_juridica">Proveedores</label>
+                @Html.TextBoxFor(d => d.Proveedores.nombre, "", new { @class = "form-control" , @readonly = "true" })
                 @Html.ValidationMessageFor(d => d.Proveedores.nombre, null, new { @class = "red" })
             </div>
 
             <div>
                 <label for="precio">Precio</label>
-                @Html.TextBoxFor(d => d.precio, "", new { @class = "form-control" })
+                @Html.TextBoxFor(d => d.precio, "", new { @class = "form-control", @readonly = "true" })
                 @Html.ValidationMessageFor(d => d.precio, null, new { @class = "red" })
             </div>
 
             <div>
                 <label for="cantidad">Cantidado</label>
-                @Html.TextBoxFor(d => d.cantidad, "", new { @class = "form-control" })
+                @Html.TextBoxFor(d => d.cantidad, "", new { @class = "form-control" , @readonly = "true" })
                 @Html.ValidationMessageFor(d => d.cantidad, null, new { @class = "red" })
             </div>
         <div>
             <label for="FechaCompra">Fecha Compra</label>
-            @Html.TextBoxFor(d => d.FechaCompra, "{0:dd-MM-yyyy}", new { @class = "form-control datepicker", placeholder = "Fecha de Compra" })
+            @Html.TextBoxFor(d => d.FechaCompra, "{0:dd-MM-yyyy}", new { @class = "form-control datepicker", placeholder = "Fecha de Compra" , @readonly = "true" })
             @Html.ValidationMessageFor(d => d.FechaCompra, "", new { @class = "text-danger" })
         </div>
 

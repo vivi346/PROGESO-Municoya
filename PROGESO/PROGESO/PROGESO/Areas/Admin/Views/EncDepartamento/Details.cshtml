@@ -29,35 +29,35 @@
         @Html.HiddenFor(d => d.Id)
         <div>
             <label for="Id">Id</label>
-            @Html.TextBoxFor(d => d.Id, "", new { @class = "form-control" })
+            @Html.TextBoxFor(d => d.Id, "", new { @class = "form-control" , @readonly = "true" })
             @Html.ValidationMessageFor(d => d.Id, null, new { @class = "red" })
         </div>
         <div>
             <label for="Correo">Correo</label>
-            @Html.TextBoxFor(d => d.Correo, "", new { @class = "form-control" })
+            @Html.TextBoxFor(d => d.Correo, "", new { @class = "form-control", @readonly = "true" })
             @Html.ValidationMessageFor(d => d.Correo, null, new { @class = "red" })
         </div>
 
         <div>
             <label for="Nombre">Nombre</label>
-            @Html.TextBoxFor(d => d.Nombre, "", new { @class = "form-control" })
+            @Html.TextBoxFor(d => d.Nombre, "", new { @class = "form-control", @readonly = "true" })
             @Html.ValidationMessageFor(d => d.Nombre, null, new { @class = "red" })
         </div>
 
         <div>
             <label for="Apellido1">Apellido1</label>
-            @Html.TextBoxFor(d => d.Apellido1, "", new { @class = "form-control" })
+            @Html.TextBoxFor(d => d.Apellido1, "", new { @class = "form-control", @readonly = "true" })
             @Html.ValidationMessageFor(d => d.Apellido1, null, new { @class = "red" })
         </div>
         <div>
             <label for="Apellido2">Apellido2</label>
-            @Html.TextBoxFor(d => d.Apellido2, "", new { @class = "form-control" })
+            @Html.TextBoxFor(d => d.Apellido2, "", new { @class = "form-control", @readonly = "true" })
             @Html.ValidationMessageFor(d => d.Apellido2, null, new { @class = "red" })
         </div>
 
         <div>
-            <label for="Departament">Departament</label>
-            @Html.TextBoxFor(d => d.Departament.Name, "", new { @class = "form-control" })
+            <label for="Departament">Departamento</label>
+            @Html.TextBoxFor(d => d.Departament.Name, "", new { @class = "form-control" , @readonly = "true" })
             @Html.ValidationMessageFor(d => d.Departament.Name, null, new { @class = "red" })
         </div>
 

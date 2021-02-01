@@ -1,25 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dell\\source\\repos\\vivi346\\PROGESO-Municoya\\PROGESO\\PROGESO\\PROGESO\\PROGESO.csproj": {}
+    "C:\\Users\\jspab\\Desktop\\PROGESO MUNI\\PROGESO\\PROGESO-Municoya\\PROGESO\\PROGESO\\PROGESO\\PROGESO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dell\\source\\repos\\vivi346\\PROGESO-Municoya\\PROGESO\\PROGESO\\PROGESO\\PROGESO.csproj": {
+    "C:\\Users\\jspab\\Desktop\\PROGESO MUNI\\PROGESO\\PROGESO-Municoya\\PROGESO\\PROGESO\\PROGESO\\PROGESO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dell\\source\\repos\\vivi346\\PROGESO-Municoya\\PROGESO\\PROGESO\\PROGESO\\PROGESO.csproj",
+        "projectUniqueName": "C:\\Users\\jspab\\Desktop\\PROGESO MUNI\\PROGESO\\PROGESO-Municoya\\PROGESO\\PROGESO\\PROGESO\\PROGESO.csproj",
         "projectName": "PROGESO",
-        "projectPath": "C:\\Users\\Dell\\source\\repos\\vivi346\\PROGESO-Municoya\\PROGESO\\PROGESO\\PROGESO\\PROGESO.csproj",
-        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dell\\source\\repos\\vivi346\\PROGESO-Municoya\\PROGESO\\PROGESO\\PROGESO\\obj\\",
+        "projectPath": "C:\\Users\\jspab\\Desktop\\PROGESO MUNI\\PROGESO\\PROGESO-Municoya\\PROGESO\\PROGESO\\PROGESO\\PROGESO.csproj",
+        "packagesPath": "C:\\Users\\jspab\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jspab\\Desktop\\PROGESO MUNI\\PROGESO\\PROGESO-Municoya\\PROGESO\\PROGESO\\PROGESO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\jspab\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -89,12 +87,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -103,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200-preview.20601.7\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
