@@ -32,8 +32,8 @@
     <div>
         @if (Model.Count() > 0)
         {
-            <table class="table tale-striped border">
-                <tr class="table.secondary">
+            <table class="table table-sm table-striped border">
+                <tr class="table-secondary">
                     <th>
 
                         @Html.DisplayNameFor(m => m.Id)
@@ -55,9 +55,9 @@
                             @Html.DisplayFor(m => item.Name)
                         </td>
                         <td>
-                            <a class="btn btn-dark" href="~/Admin/Departament/Edit/@item.Id">Editar</a>
-                            <a class="btn btn-danger" href="~/Admin/Departament/Delete/@item.Id">Borrar</a>
-                            <a class="btn btn-success" href="~/Admin/Departament/Details/@item.Id">Detalles</a>
+                            <a class="btn btn-dark btn-sm" href="~/Admin/Departament/Edit/@item.Id">Editar</a>
+                            <a class="btn btn-danger btn-sm" href="~/Admin/Departament/Delete/@item.Id">Borrar</a>
+                            <a class="btn btn-success btn-sm" href="~/Admin/Departament/Details/@item.Id">Detalles</a>
                         </td>
 
                     </tr>

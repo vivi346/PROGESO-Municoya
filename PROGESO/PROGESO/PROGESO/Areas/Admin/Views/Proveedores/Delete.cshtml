@@ -25,7 +25,7 @@
 @using (Html.BeginForm("Delete", "Proveedores", FormMethod.Post))
 {
 <div class="form-group-row">
-    <div class="col-md-6">
+    <div class="col-md-3">
         @Html.HiddenFor(d => d.ced_juridica)
         <div>
 
@@ -45,7 +45,7 @@
 
 
 </div>
-    <div class="col-6">
+    <div class="col-md-5">
         @Html.Partial("_DeleteAndBackToListButton")
     </div>
 }

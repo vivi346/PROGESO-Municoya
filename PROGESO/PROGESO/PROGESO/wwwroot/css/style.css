@@ -1107,7 +1107,7 @@ button:focus {
     }
 
 .blog-box {
-    padding: 70px 0px;
+    padding: 100px 0px;
 }
 
 .blog-box-inner {
@@ -1186,14 +1186,14 @@ button:focus {
     position: absolute;
     right: 0px;
     top: 0px;
-    background: #d65106;
+    background: #;
     font-size: 18px;
-    color: #ffffff;
+    color: #a52d2d;
     padding: 5px 15px 5px 5px;
 }
 
 .inner-blog-detail {
-    background: #ffffff;
+    background: #18775c;
     position: relative;
     padding: 30px 20px;
 }
@@ -1211,7 +1211,7 @@ button:focus {
     }
 
         .inner-blog-detail ul li span {
-            color: #d65106;
+            color: #a52d2d;
         }
 
     .inner-blog-detail p {

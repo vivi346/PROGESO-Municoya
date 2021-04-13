@@ -29,6 +29,25 @@ namespace PROGESO.Controllers
             return View();
         }
 
+        public ActionResult IndexDetaContratacion1()
+        {
+            return View();
+        }
+
+        public ActionResult IndexDetaContratacion2()
+        {
+            return View();
+        }
+
+        public ActionResult IndexDetaLicitacion1()
+        {
+            return View();
+        }
+
+        public ActionResult IndexDetaLicitacion2()
+        {
+            return View();
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

@@ -27,7 +27,7 @@
 {
     <div class="form-group-row">
 
-        <div class="col-md-6">
+        <div class="col-md-4">
 
             <div>
                 <label for="cod_prod">Producto</label>
@@ -47,30 +47,34 @@
 
             <div>
                 <label for="precio">Precio</label>
-                @Html.TextBoxFor(d => d.precio, "", new { @class = "form-control", type= "number" })
-                @Html.ValidationMessageFor(d => d.precio, null, new { @class = "red" })
+                <div class="col-md-12 col-sm-12">
+                    @Html.TextBoxFor(d => d.precio, "", new { @class = "form-control", type = "number" })
+                    @Html.ValidationMessageFor(d => d.precio, null, new { @class = "red" })
+                </div>
             </div>
 
             <div>
                 <label for="cantidad">Cantidad</label>
-                @Html.TextBoxFor(d => d.cantidad, "", new { @class = "form-control", type = "number" })
-                @Html.ValidationMessageFor(d => d.cantidad, null, new { @class = "red" })
+                <div class="col-md-12 col-sm-12">
+                    @Html.TextBoxFor(d => d.cantidad, "", new { @class = "form-control", type = "number" })
+                    @Html.ValidationMessageFor(d => d.cantidad, null, new { @class = "red" })
+                </div>
             </div>
 
-          
-            <div>
+
+                <div>
                     @Html.LabelFor(model => model.FechaCompra, htmlAttributes: new { @class = "control-label col-md-4" })
                     @Html.EditorFor(model => model.FechaCompra, new { htmlAttributes = new { @class = "form-control" } })
                     @Html.ValidationMessageFor(model => model.FechaCompra, "", new { @class = "text-danger" })
+                </div>
+
+                <br />
+
+
             </div>
-
-            <br />
-
-
-        </div>
     </div>
 
-    <div class="col-6">
+    <div class="col-md-5">
 
         @Html.Partial("_CreateAndBackToListButton")
     </div>

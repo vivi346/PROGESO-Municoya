@@ -26,7 +26,7 @@
         <div class="col-6">
             @*<h2 class="text-info">Proveedores</h2>*@
         </div>
-        <div class="col-6 text-right">
+        <div class="col-lg-6 text-right">
             @Html.Partial("_CreateButtonPartial")
         </div>
     </div>
@@ -34,7 +34,7 @@
     <div>
         @if (Model.Count() > 0)
         {
-            <table class="table table-striped border">
+            <table class="table table-sm table-striped border">
                 <tr class="table-secondary">
                     <th>
                         <label for="ced_juridica">Ced_Juridica</label>
@@ -49,23 +49,21 @@
 
                 @foreach (var item in Model)
                 {
-                    <tr>
-                        <td>
-                            @Html.DisplayFor(m => item.ced_juridica)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(m => item.nombre)
-                        </td>
-                        <td>
-                            <a class="btn btn-dark" href="~/Admin/Proveedores/Edit/@item.ced_juridica">Editar</a>
-                            <a class="btn btn-danger" href="~/Admin/Proveedores/Delete/@item.ced_juridica">Borrar</a>
-                            <a class="btn btn-success" href="~/Admin/Proveedores/Details/@item.ced_juridica">Detalles</a>
+            <tr>
+                <td>
+                    @Html.DisplayFor(m => item.ced_juridica)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.nombre)
+                </td>
+                <td>
+                    <a class="btn btn-dark btn-sm" href="~/Admin/Proveedores/Edit/@item.ced_juridica">Editar</a>
+                    <a class="btn btn-danger btn-sm" href="~/Admin/Proveedores/Delete/@item.ced_juridica">Borrar</a>
+                    <a class="btn btn-success btn-sm" href="~/Admin/Proveedores/Details/@item.ced_juridica">Detalles</a>
 
-                        </td>
+                </td>
 
-
-
-                    </tr>
+            </tr>
 
                 }
             </table>
@@ -80,9 +78,11 @@
 
 </div>
 
-<div class="col-6">
-    @Html.Partial("_BackButton")
-</div>
+<div class="form-group">
+    <div class="col-6">
+        @Html.Partial("_BackButton")
+    </div>
+    </div>
 
 <!--<div class="col-6">-->
 @*<a href="javascript:history.back()"> Volver Atrás</a>*@
